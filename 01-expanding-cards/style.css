@@ -13,3 +13,39 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.container {
+  display: flex;
+  max-width: 90vw;
+  width: 100%;
+}
+
+.panel {
+  /* flex: 0.5; - съкратената версия на доните стойности */
+  flex-grow: 0.5;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  transition: flex 0.7s ease-in;
+
+  position: relative;
+  height: 80vh;
+  margin: 10px;
+
+  /* background-size: auto 100%; - във видеото това използва. Да видим защо */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 24px;
+  opacity: 0;
+}
