@@ -16,8 +16,7 @@ body {
 
 .container {
   display: flex;
-  max-width: 90vw;
-  width: 100%;
+  width: 90vw;
 }
 
 .panel {
@@ -48,4 +47,29 @@ body {
   margin: 0;
   font-size: 24px;
   opacity: 0;
+}
+
+/* Style cards when they are open */
+.panel.active {
+  flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  /* shorthanded: flex: 5; */
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  /* Removing last two cards */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
