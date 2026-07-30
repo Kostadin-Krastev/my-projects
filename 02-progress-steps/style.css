@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -14,4 +18,13 @@ body {
 
 .progress-bar-section {
   text-align: center;
+}
+
+.progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 35rem;
+  margin-bottom: 3rem;
 }
