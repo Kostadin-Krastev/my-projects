@@ -29,6 +29,18 @@ body {
   margin-bottom: 3rem;
 }
 
+.progress-bar-container::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 0.4rem;
+  width: 100%;
+  z-index: -1;
+  content: '';
+  background-color: #e0e0e0;
+}
+
 .progress {
   position: absolute;
   top: 50%;
