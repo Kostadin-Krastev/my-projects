@@ -77,3 +77,30 @@ body {
 .circle.active {
   border-color: var(--line-border-fill);
 }
+
+/* BUTTONS */
+.btn {
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 0.8rem 3rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: var(--line-border-fill);
+}
+
+.btn:active {
+  transform: scale(
+    0.98
+  ); /*add size effect on click (the button become smaller)*/
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--line-border-empty);
+}
