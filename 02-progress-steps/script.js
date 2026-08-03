@@ -11,7 +11,7 @@ const totalSteps = circleElements.length;
 function updateSteps() {
   // Update progress line width
   const progressPercent = ((currentStep - 1) / (totalSteps - 1)) * 100;
-  progressElement.style.width = progressPercent + '%';
+  progressElement.style.width = `${progressPercent}%`;
 
   // Update circles "active" status
   circleElements.forEach((circle, index) => {
